@@ -9,6 +9,9 @@ const Plants = mongoose.Schema ({
   imageURL: {
     type: String
   },
+  imageURL2: {
+    type: String
+  },
 })
 
 module.exports = mongoose.model("Product", Plants);

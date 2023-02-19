@@ -1,0 +1,75 @@
+
+
+.circle {
+    height: 45vmax;
+    width: 45vmax;
+    border-radius: 100%;
+    background-color: rgb(10,134,76);
+    position: absolute;
+    left: 70vmax;
+
+}
+
+.photo {
+    height: 18vmax;
+    width: 18vmax;
+    border-radius: 100%;
+    position: absolute;
+    left: 63vmax;
+    top: 18vmax;
+   
+}
+
+
+.BackgroundImage{
+    position: absolute;
+    width: 20vmax;
+    left: -2vmax;
+    top: 0vmax;
+    z-index: 1;
+}
+.ResultHeading{
+    display: flex;
+    justify-content: center;
+    padding-top: 14vmax;
+    align-self: center;
+    width: 70%;
+
+}
+.ResultHeading > div > h1{
+    color: rgb(2, 109, 59);
+    font-size: 3vmax;
+}
+.ResultButtons{
+    margin-top: 1vmax;
+    padding-left: 3vmax;
+    width: 29vmax;
+    display: flex;
+    justify-content: space-between;
+}
+.ResultButtons > button{
+    font-size: 1.1vmax;
+    width: 10vmax;
+    height: 3vmax;
+    border-radius: 8%;
+    border-width: 0px;
+    
+}
+
+.KnowMore{
+    background-color: rgb(7, 185, 102);
+    color: white;
+}
+
+.TryAgain{
+    background-color: #F9C70C;
+}
+
+.ResultDiscription{
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    margin-top: 21.8vmax;
+    z-index: 2;
+    position: relative;
+}
