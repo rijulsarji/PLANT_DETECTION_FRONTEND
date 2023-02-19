@@ -1,8 +1,9 @@
 import './App.css';
-import Image from './pages/Image.js';
+import ImageUpload from './pages/ImageUpload.js';
 import { Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
+import Plants from './pages/Plants';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/home" element={<Home />} /> 
-        <Route path="/image-upload" element={<Image />} />
+        <Route path="/image-upload" element={<ImageUpload />} />
+        <Route path="/plants/:id" element={<Plants />} />
       </Routes>
     </div>
   );
