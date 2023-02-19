@@ -1,7 +1,7 @@
 import ImageDetection from "./ImageDetection";
 import React, { useMemo, useState } from "react";
 import { useDropzone } from "react-dropzone";
-import {BsTrash} from "react-icons/bs";
+import { BsTrash } from "react-icons/bs";
 
 const baseStyle = {
   marginLeft: "auto",
@@ -22,7 +22,7 @@ const baseStyle = {
   transition: "all .24s ease-in-out",
   fontFamily: "Segoe UI",
   fontSize: "24px",
-  cursor: "pointer"
+  cursor: "pointer",
 };
 
 const focusedStyle = {
@@ -49,7 +49,11 @@ function DragDrop() {
     isFocused,
     isDragAccept,
     isDragReject,
-  } = useDropzone({ accept: { "image/*": [] }, multiple: false, onDrop: acceptedFiles => setFile(acceptedFiles[0])});
+  } = useDropzone({
+    accept: { "image/*": [] },
+    multiple: false,
+    onDrop: (acceptedFiles) => setFile(acceptedFiles[0]),
+  });
 
   const style = useMemo(
     () => ({
@@ -90,13 +94,26 @@ function DragDrop() {
     >
       <div {...getRootProps({ style })}>
         <input {...getInputProps()} />
-        <p>Drag & drop image of a plant 🪴, or click to select an image 📸</p>
+        <p style={{ backgroundColor: "transparent" }}>
+          Drag & drop image of a plant 🪴, or click to select an image 📸
+        </p>
         {acceptedFiles.map((file) => (
           <div
-            style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "20px" }}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              gap: "20px",
+              backgroundColor: "transparent",
+            }}
           >
-            <p>{file.path}</p>
-            <BsTrash onClick={removeButton} color="red" size={24}/>
+            <p style={{ backgroundColor: "transparent" }}>{file.path}</p>
+            <BsTrash
+              onClick={removeButton}
+              color="red"
+              size={24}
+              style={{ backgroundColor: "transparent" }}
+            />
           </div>
         ))}
       </div>
