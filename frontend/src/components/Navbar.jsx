@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/components/Navbar.css";
 import logo from "../assets/botanique-logo.png";
+import {NavLink} from "react-router-dom";
 
 const Navbar = () => {
 
