@@ -1,17 +1,17 @@
 const mongoose = require("mongoose");
-const Plants = mongoose.Schema ({
+const Plants = mongoose.Schema({
   name: {
-    type: String
+    type: String,
   },
   description: {
-    type: String
+    type: String,
   },
-  imageURL: {
-    type: String
+  imageURL1: {
+    type: String,
   },
   imageURL2: {
-    type: String
+    type: String,
   },
-})
+});
 
-module.exports = mongoose.model("Product", Plants);
+module.exports = mongoose.model("Plants", Plants);
