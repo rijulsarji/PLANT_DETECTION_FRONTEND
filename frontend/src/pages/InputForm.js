@@ -3,6 +3,7 @@ import React, { useState } from "react";
 const InputForm = () => {
   const [details, setDetails] = useState({
     name: "",
+    heading: "",
     description: "",
     imageURL1: "",
     imageURL2: "",
@@ -32,6 +33,7 @@ const InputForm = () => {
         setDetails({
           ...details,
           name: "",
+          heading: "",
           description: "",
           imageURL1: "",
           imageURL2: "",
@@ -50,6 +52,13 @@ const InputForm = () => {
             placeholder="plantName"
             value={details.name}
             name="name"
+            onChange={handleChange}
+          />
+          <input
+            type="text"
+            placeholder="heading"
+            value={details.heading}
+            name="heading"
             onChange={handleChange}
           />
           <input
