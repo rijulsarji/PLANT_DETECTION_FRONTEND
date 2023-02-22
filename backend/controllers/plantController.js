@@ -2,7 +2,7 @@ const Plants = require("../models/plantModel");
 const catchAsyncErrors = require("../middlewares/catchAsyncErrors");
 
 exports.createPlants = catchAsyncErrors(async (req, res, next) => {
-  const data = new Plants(req.body);
+  const data = Plants.create(req.body);
   res.json(data);
   data
     .save()
