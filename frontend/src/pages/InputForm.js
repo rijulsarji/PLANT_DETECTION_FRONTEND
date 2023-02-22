@@ -4,6 +4,7 @@ const InputForm = () => {
   const [details, setDetails] = useState({
     name: "",
     heading: "",
+    shortDescription: "",
     description: "",
     imageURL1: "",
     imageURL2: "",
@@ -20,7 +21,7 @@ const InputForm = () => {
 
   const handleSubmit = (e) => {
     setLoad(true);
-    fetch("http://localhost:4000/api/v1/plants", {
+    fetch("https://botanique-backend.onrender.com/api/v1/plants", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -34,6 +35,7 @@ const InputForm = () => {
           ...details,
           name: "",
           heading: "",
+          shortDescription: "",
           description: "",
           imageURL1: "",
           imageURL2: "",
@@ -59,6 +61,13 @@ const InputForm = () => {
             placeholder="heading"
             value={details.heading}
             name="heading"
+            onChange={handleChange}
+          />
+          <input
+            type="text"
+            placeholder="short description"
+            value={details.shortDescription}
+            name="shortDescription"
             onChange={handleChange}
           />
           <input
