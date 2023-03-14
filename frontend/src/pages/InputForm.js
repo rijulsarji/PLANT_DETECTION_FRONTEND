@@ -21,7 +21,7 @@ const InputForm = () => {
 
   const handleSubmit = (e) => {
     setLoad(true);
-    fetch("http://localhost:5000/api/v1/plants/", {
+    fetch("https://botanique-backend.onrender.com/api/v1/plants", {
       method: "POST",
       headers: {
         Accept: "application/json",
