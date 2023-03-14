@@ -4,6 +4,7 @@ const InputForm = () => {
   const [details, setDetails] = useState({
     name: "",
     heading: "",
+    shortDescription: "",
     description: "",
     imageURL1: "",
     imageURL2: "",
@@ -20,7 +21,7 @@ const InputForm = () => {
 
   const handleSubmit = (e) => {
     setLoad(true);
-    fetch("http://localhost:4000/api/v1/plants", {
+    fetch("http://localhost:5000/api/v1/plants/", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -34,6 +35,7 @@ const InputForm = () => {
           ...details,
           name: "",
           heading: "",
+          shortDescription: "",
           description: "",
           imageURL1: "",
           imageURL2: "",
@@ -49,7 +51,7 @@ const InputForm = () => {
         <form onSubmit={handleSubmit}>
           <input
             type="text"
-            placeholder="plantName"
+            placeholder="plant name"
             value={details.name}
             name="name"
             onChange={handleChange}
@@ -59,6 +61,13 @@ const InputForm = () => {
             placeholder="heading"
             value={details.heading}
             name="heading"
+            onChange={handleChange}
+          />
+          <input
+            type="text"
+            placeholder="short description"
+            value={details.shortDescription}
+            name="shortDescription"
             onChange={handleChange}
           />
           <input
