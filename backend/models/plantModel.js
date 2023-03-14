@@ -7,7 +7,7 @@ const Plants = mongoose.Schema({
     type: String
   },
   shortDescription: {
-    type: String
+    type: String,
   },
   description: {
     type: String,
