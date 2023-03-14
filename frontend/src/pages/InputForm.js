@@ -51,7 +51,7 @@ const InputForm = () => {
         <form onSubmit={handleSubmit}>
           <input
             type="text"
-            placeholder="plantName"
+            placeholder="plant name"
             value={details.name}
             name="name"
             onChange={handleChange}
