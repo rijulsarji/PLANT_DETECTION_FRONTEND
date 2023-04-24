@@ -1,5 +1,8 @@
 import React from 'react'
 import "../styles/pages/newResult.css"; 
+
+// https://botanique-backend.onrender.com/api/v1/plants
+
 function newResult() {
   return (
     <div className='Result'>

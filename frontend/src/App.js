@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Plants from './pages/newResult';
 import LandingPage from './pages/LandingPage';
 import InputForm from './pages/InputForm';
+import AboutPage from './pages/AboutPage';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/home" element={<ImageUpload />} />
-          <Route path="/about" element={<Home />} /> 
+          <Route path="/about" element={<AboutPage />} /> 
           <Route path="/plants/:id" element={<Plants />} />
           <Route path="/input-form" element={<InputForm />} />
         </Routes>
