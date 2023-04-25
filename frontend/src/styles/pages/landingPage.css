@@ -17,8 +17,12 @@
   background-color: transparent;
   color: antiquewhite;
   font-family: 'Bona Nova', serif;
+  text-shadow: 0px 0px 0px white;
+  transition: all 0.1s linear;
+  padding: 10px;
 }
 
 .LandingPageHeading:hover{
   cursor: pointer;
+  text-shadow: 0px 0px 5px white;
 }
