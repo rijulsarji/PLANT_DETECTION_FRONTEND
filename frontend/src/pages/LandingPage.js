@@ -1,18 +1,28 @@
-import React from 'react'
+import React from "react";
+import Background from"../assets/background.jpg";
+import "../styles/pages/landingPage.css";
+
 
 const LandingPage = () => {
 
   return (
-    <div>
+    <>
       <h1
         onClick={() =>
           window.open("https://botanique.netlify.app/home", "_self")
         }
       >
-        LandingPage
+        <div
+          style={{
+            backgroundImage: `URL(${Background})`
+          }}
+          className="LandingPageDiv"
+        >
+          <h1 className="LandingPageHeading">BOTANIQUE</h1>
+        </div>
       </h1>
-    </div>
+    </>
   );
-}
+};
 
 export default LandingPage;
