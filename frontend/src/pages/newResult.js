@@ -1,5 +1,6 @@
 import React, { Fragment, useEffect, useState } from 'react'
 import "../styles/pages/newResult.css"; 
+
 import {  useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
 
@@ -19,6 +20,11 @@ function NewResult() {
           };
           getData()
       }, []);
+
+// https://botanique-backend.onrender.com/api/v1/plants
+
+function newResult() {
+
   return (
     <Fragment>
         {loading ? (

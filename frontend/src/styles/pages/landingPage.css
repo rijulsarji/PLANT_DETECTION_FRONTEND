@@ -1,0 +1,24 @@
+.LandingPageDiv {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.LandingPageHeading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 140px;
+  letter-spacing: 20px;
+  background-color: transparent;
+  color: antiquewhite;
+  font-family: 'Bona Nova', serif;
+}
+
+.LandingPageHeading:hover{
+  cursor: pointer;
+}
