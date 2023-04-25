@@ -9,7 +9,7 @@ const LandingPage = () => {
     <>
       <h1
         onClick={() =>
-          window.open("https://botanique.netlify.app/home", "_self")
+          window.open("http://localhost:3000/home", "_self")
         }
       >
         <div

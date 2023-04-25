@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap");
+
 * {
   background-color: #fefff4;
 }
+
 .card {
   display: flex;
   width: 80vmax;
@@ -28,6 +30,7 @@
   top: 0vmax;
   left: 0vmax;
 }
+
 .Image-Bottom {
   position: absolute;
   width: 18vmax;
